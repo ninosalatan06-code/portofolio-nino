@@ -3,200 +3,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nino - Professional Profile</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Transisi halus saat berganti tema */
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-    </style></head><body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans antialiased">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head><body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
 
-    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-sm transition-colors duration-300">
+    <nav class="sticky top-0 z-50 bg-[#0b0f19]/70 backdrop-blur-md border-b border-slate-800/60 shadow-sm">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">Nino.</a>
-            
-            <div class="flex items-center gap-6">
-                <div class="hidden sm:flex space-x-6 text-sm font-medium text-slate-600 dark:text-slate-300">
-                    <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Tentang</a>
-                    <a href="#services" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Layanan</a>
-                    <a href="#portfolio" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Portofolio</a>
-                    <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Kontak</a>
-                </div>
-
-                <button id="theme-toggle" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition cursor-pointer" aria-label="Toggle Theme">
-                    <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
-                </button>
+            <a href="#" class="text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-400">Nino.</a>
+            <div class="space-x-6 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-indigo-400 transition">Tentang</a>
+                <a href="#services" class="hover:text-indigo-400 transition">Layanan</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition">Portofolio</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center">
+    <header class="max-w-5xl mx-auto px-6 pt-20 pb-24 grid md:grid-cols-2 gap-12 items-center">
         <div>
-            <span class="text-sm font-semibold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">Selamat Datang</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-2 leading-tight">
-                Halo, Saya <span class="text-indigo-600 dark:text-indigo-400">Nino</span>
+            <span class="text-xs font-semibold tracking-widest text-indigo-400 uppercase bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Selamat Datang</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 leading-tight">
+                Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-400">Nino</span>
             </h1>
-            <p class="text-lg text-slate-600 dark:text-slate-300 mt-4 leading-relaxed">
+            <p class="text-base text-slate-400 mt-4 leading-relaxed">
                 Seorang profesional yang berdedikasi dalam menghadirkan solusi digital, manajemen proyek, dan efisiensi operasional. Berfokus pada inovasi dan hasil yang berdampak nyata.
             </p>
             <div class="mt-8 flex gap-4">
-                <a href="#contact" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-200 dark:shadow-none hover:bg-indigo-700 transition">
+                <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-fuchsia-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-900/30 hover:opacity-90 transition">
                     Hubungi Saya
                 </a>
-                <a href="#portfolio" class="px-6 py-3 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition">
+                <a href="#portfolio" class="px-6 py-3 bg-slate-900/60 text-slate-300 font-medium rounded-xl border border-slate-800 hover:bg-slate-800/80 transition">
                     Lihat Pekerjaan
                 </a>
             </div>
         </div>
         <div class="flex justify-center md:justify-end">
-            <div class="relative w-72 h-72 md:w-80 md:h-80 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center">
-                <i class="fa-solid fa-user text-white text-8xl opacity-80"></i>
-                </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-fuchsia-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative w-72 h-72 md:w-80 md:h-80 bg-[#131b2e] border border-slate-800 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center">
+                    <i class="fa-solid fa-user text-slate-700 text-8xl opacity-60 group-hover:scale-105 transition duration-300"></i>
+                    </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="bg-white dark:bg-slate-900/50 border-y border-slate-100 dark:border-slate-800 py-20 transition-colors duration-300">
+    <section id="about" class="bg-[#0e1424] border-y border-slate-900 py-24">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Tentang Saya</h2>
-                <div class="w-12 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-3 rounded-full"></div>
-                <p class="text-slate-600 dark:text-slate-300 mt-4 leading-relaxed">
+                <h2 class="text-3xl font-bold text-white">Tentang Saya</h2>
+                <div class="w-12 h-1 bg-gradient-to-r from-indigo-500 to-fuchsia-500 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-400 mt-4 leading-relaxed">
                     Dengan pengalaman di berbagai bidang strategis, saya mengombinasikan keahlian teknis dan manajemen untuk membantu bisnis maupun organisasi berkembang di era modern. Saya percaya bahwa ketelitian dan kolaborasi adalah kunci utama kesuksesan proyek.
                 </p>
             </div>
             
-            <div class="grid sm:grid-cols-3 gap-8 mt-12">
-                <div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4">
+            <div class="grid sm:grid-cols-3 gap-8 mt-16">
+                <div class="p-6 bg-[#131b2e]/50 border border-slate-800/60 rounded-2xl text-center hover:border-slate-700/60 transition">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4 border border-indigo-500/20">
                         <i class="fa-solid fa-bolt"></i>
                     </div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white">Efisiensi Tinggi</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Mengoptimalkan alur kerja dan sistem untuk hasil yang lebih cepat dan terstruktur.</p>
+                    <h3 class="font-semibold text-white">Efisiensi Tinggi</h3>
+                    <p class="text-slate-400 text-sm mt-2">Mengoptimalkan alur kerja dan sistem untuk hasil yang lebih cepat dan terstruktur.</p>
                 </div>
-                <div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4">
+                <div class="p-6 bg-[#131b2e]/50 border border-slate-800/60 rounded-2xl text-center hover:border-slate-700/60 transition">
+                    <div class="w-12 h-12 bg-fuchsia-500/10 text-fuchsia-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4 border border-fuchsia-500/20">
                         <i class="fa-solid fa-lightbulb"></i>
                     </div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white">Solusi Inovatif</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Menghadirkan ide-ide segar yang relevan dengan perkembangan tren terkini.</p>
+                    <h3 class="font-semibold text-white">Solusi Inovatif</h3>
+                    <p class="text-slate-400 text-sm mt-2">Menghadirkan ide-ide segar yang relevan dengan perkembangan tren terkini.</p>
                 </div>
-                <div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl text-center">
-                    <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4">
+                <div class="p-6 bg-[#131b2e]/50 border border-slate-800/60 rounded-2xl text-center hover:border-slate-700/60 transition">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center mx-auto text-xl mb-4 border border-indigo-500/20">
                         <i class="fa-solid fa-users"></i>
                     </div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white">Kolaboratif</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Mampu bekerja sama dalam tim lintas divisi demi mencapai visi bersama.</p>
+                    <h3 class="font-semibold text-white">Kolaboratif</h3>
+                    <p class="text-slate-400 text-sm mt-2">Mampu bekerja sama dalam tim lintas divisi demi mencapai visi bersama.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20">
+    <section id="services" class="py-24">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Layanan Tambahan</h2>
-                <div class="w-12 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-3 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-white">Layanan Tambahan</h2>
+                <div class="w-12 h-1 bg-gradient-to-r from-indigo-500 to-fuchsia-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm flex gap-6 transition-colors duration-300">
-                    <div class="text-3xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="bg-[#0e1424] p-8 rounded-2xl border border-slate-800/80 shadow-sm flex gap-6 hover:border-slate-700 transition">
+                    <div class="text-3xl text-indigo-400"><i class="fa-solid fa-chart-line"></i></div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Manajemen & Analisis Data</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Penyusunan, pembersihan, dan otomasi data administrasi secara rapi dan sistematis untuk mempermudah pengambilan keputusan.</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Manajemen & Analisis Data</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Penyusunan, pembersihan, dan otomasi data administrasi secara rapi dan sistematis untuk mempermudah pengambilan keputusan.</p>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm flex gap-6 transition-colors duration-300">
-                    <div class="text-3xl text-indigo-600 dark:text-indigo-400"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="bg-[#0e1424] p-8 rounded-2xl border border-slate-800/80 shadow-sm flex gap-6 hover:border-slate-700 transition">
+                    <div class="text-3xl text-fuchsia-400"><i class="fa-solid fa-laptop-code"></i></div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Pengembangan No-Code App</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Membangun alat bantu digital internal dan aplikasi manajemen aset berbasis platform no-code untuk efisiensi operasional.</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Pengembangan No-Code App</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Membangun alat bantu digital internal dan aplikasi manajemen aset berbasis platform no-code untuk efisiensi operasional.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="bg-white dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 py-20 transition-colors duration-300">
+    <section id="portfolio" class="bg-[#0e1424] border-t border-slate-900 py-24">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Proyek Terbaru</h2>
-                <div class="w-12 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-3 rounded-full"></div>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white">Proyek Terbaru</h2>
+                <div class="w-12 h-1 bg-gradient-to-r from-indigo-500 to-fuchsia-500 mx-auto mt-3 rounded-full"></div>
             </div>
 
             <div class="grid sm:grid-cols-2 gap-8">
                 <div class="group cursor-pointer">
-                    <div class="bg-slate-100 dark:bg-slate-800 aspect-video rounded-2xl overflow-hidden flex items-center justify-center text-slate-400 dark:text-slate-500 text-4xl group-hover:scale-[1.02] transition duration-300">
-                        <i class="fa-solid fa-folder-open"></i>
+                    <div class="bg-[#131b2e] border border-slate-800 aspect-video rounded-2xl overflow-hidden flex items-center justify-center text-slate-600 text-4xl group-hover:scale-[1.02] group-hover:border-indigo-500/50 transition duration-300 shadow-inner">
+                        <i class="fa-solid fa-folder-open group-hover:text-indigo-400 transition"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mt-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Sistem Manajemen Internal</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Otomasi database dan tata kelola struktur organisasi.</p>
+                    <h3 class="font-bold text-white mt-4 group-hover:text-indigo-400 transition">Sistem Manajemen Internal</h3>
+                    <p class="text-slate-400 text-sm mt-1">Otomasi database dan tata kelola struktur organisasi.</p>
                 </div>
                 <div class="group cursor-pointer">
-                    <div class="bg-slate-100 dark:bg-slate-800 aspect-video rounded-2xl overflow-hidden flex items-center justify-center text-slate-400 dark:text-slate-500 text-4xl group-hover:scale-[1.02] transition duration-300">
-                        <i class="fa-solid fa-cubes"></i>
+                    <div class="bg-[#131b2e] border border-slate-800 aspect-video rounded-2xl overflow-hidden flex items-center justify-center text-slate-600 text-4xl group-hover:scale-[1.02] group-hover:border-fuchsia-500/50 transition duration-300 shadow-inner">
+                        <i class="fa-solid fa-cubes group-hover:text-fuchsia-400 transition"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 dark:text-white mt-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">Perencanaan Tata Ruang & Aset</h3>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Pemetaan aset digital dan desain utilitas fungsional.</p>
+                    <h3 class="font-bold text-white mt-4 group-hover:text-fuchsia-400 transition">Perencanaan Tata Ruang & Aset</h3>
+                    <p class="text-slate-400 text-sm mt-1">Pemetaan aset digital dan desain utilitas fungsional.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-slate-900 dark:bg-slate-950 border-t border-slate-800 text-white transition-colors duration-300">
+    <section id="contact" class="py-24 bg-[#070a12] border-t border-slate-900 text-white">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold">Mari Berkolaborasi</h2>
-            <p class="text-slate-400 mt-4 leading-relaxed max-w-xl mx-auto">
+            <p class="text-slate-400 mt-4 leading-relaxed max-w-xl mx-auto text-sm">
                 Punya proyek menarik atau butuh bantuan untuk mengoptimalkan sistem di organisasi Anda? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
             </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 text-slate-300">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-slate-800 dark:bg-slate-900 rounded-xl flex items-center justify-center text-indigo-400">
+            <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 text-slate-300">
+                <div class="flex items-center gap-4 bg-[#0e1424] border border-slate-800/80 px-6 py-4 rounded-2xl w-full sm:w-auto">
+                    <div class="w-10 h-10 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 border border-indigo-500/20">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <span class="text-lg">nino@example.com</span>
+                    <span class="text-base font-medium tracking-wide">nino@example.com</span>
                 </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-slate-800 dark:bg-slate-900 rounded-xl flex items-center justify-center text-indigo-400">
+                <div class="flex items-center gap-4 bg-[#0e1424] border border-slate-800/80 px-6 py-4 rounded-2xl w-full sm:w-auto">
+                    <div class="w-10 h-10 bg-fuchsia-500/10 rounded-xl flex items-center justify-center text-fuchsia-400 border border-fuchsia-500/20">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <span class="text-lg">Kalimantan Timur, Indonesia</span>
+                    <span class="text-base font-medium tracking-wide">Kalimantan Timur, Indonesia</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 text-slate-600 dark:text-slate-500 text-xs py-6 border-t border-slate-800/50">
-        <div class="max-w-5xl mx-auto px-6 text-center">
+    <footer class="bg-[#05070d] text-slate-600 text-xs py-8 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto px-6 text-center tracking-wide">
             &copy; 2026 Nino. All rights reserved.
         </div>
     </footer>
 
-    <script>
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-        const htmlElement = document.documentElement;
-
-        // Cek preferensi tema sebelumnya dari localStorage jika ada
-        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            htmlElement.classList.add('dark');
-            themeIcon.className = 'fa-solid fa-sun text-lg'; // Ubah ikon ke matahari saat mode gelap aktif
-        } else {
-            htmlElement.classList.remove('dark');
-            themeIcon.className = 'fa-solid fa-moon text-lg'; // Ubah ikon ke bulan saat mode terang aktif
-        }
-
-        // Event listener saat tombol diklik
-        themeToggleBtn.addEventListener('click', () => {
-            if (htmlElement.classList.contains('dark')) {
-                htmlElement.classList.remove('dark');
-                themeIcon.className = 'fa-solid fa-moon text-lg';
-                localStorage.setItem('theme', 'light');
-            } else {
-                htmlElement.classList.add('dark');
-                themeIcon.className = 'fa-solid fa-sun text-lg';
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-    </script>
 </body></html>
